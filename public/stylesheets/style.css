@@ -3,6 +3,50 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#header {
+	background-color: black;
+  color: white;
+  overflow: hidden;
+  width: 97.25%;
+  height: 40px;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+	clear: both;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+}
+
+.app {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Carter One';
+	float: left;
+	margin-left: 8.5%;
+  }
+
+.app:link, .app:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.brand {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Carter One';
+	text-align: right;
+	float: right;
+	margin-right: 2%;
+}
+
+.brand a:link, .brand a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.wrapper {
+  margin-top: 5%;
+  margin-left: 6%;
 }

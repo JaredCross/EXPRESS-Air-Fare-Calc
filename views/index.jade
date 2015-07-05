@@ -1,43 +1,48 @@
 extends layout
 
 block content
-  h3 Air Fare Calculator 
-  div#form-container  
-    form(action='/', method='post')
-      p
-        label(for='departureCity') Departure City 
-      p.departure-container
-        select#departureCity(name='departure')
-          option(value='invalid', selected='') Choose a City     
-          option(value='newyork') New York
-          option(value='chicago') Chicago 
-          option(value='la') Los Angeles
-      p
-        label(for='arrivalCity') Arrival City   
-      p.arrival-container
-        select#arrivalCity(name='arrival')
-          option(value='invalid', selected='') Choose a City         
-          option(value='newyork') New York       
-          option(value='chicago') Chicago       
-          option(value='la') Los Angeles
-      p
-        label(for='bags') Number of checked bags ($25/bag)   
-      p
-        input#bags(type='number', name='baggage')
-      p
-        label(for='class') Class   
-      p
-        select#class(name='class')
-          option(value='0', selected='') Coach
-          option(value='200') Business (+ $200)
-          option(value='500') First (+ $500)
-      p
-        input#wifi(type='checkbox', name='wifi', value='yes')
-        label(for='wifi') Wifi ($12)
-      p
-        label(for='discount') Discount code     
-      input#discount(type='text', name='discount', value='')     
-      p.discount-active-read
-        button#click(type='submit', name='calculate') Calculate Price
-      p.info #{total}
-        
+  div#header
+    a.app(href='http://airfare.jaredcross.com') Air Fare Calculator!
+    h1.brand 
+      a(href='http://jaredcross.com') jaredcross.com
+  div.wrapper
+    h3 Air Fare Calculator 
+    div#form-container  
+      form(action='/', method='post')
+        p
+          label(for='departureCity') Departure City 
+        p.departure-container
+          select#departureCity(name='departure')
+            option(value='invalid', selected='') Choose a City     
+            option(value='newyork') New York
+            option(value='chicago') Chicago 
+            option(value='la') Los Angeles
+        p
+          label(for='arrivalCity') Arrival City   
+        p.arrival-container
+          select#arrivalCity(name='arrival')
+            option(value='invalid', selected='') Choose a City         
+            option(value='newyork') New York       
+            option(value='chicago') Chicago       
+            option(value='la') Los Angeles
+        p
+          label(for='bags') Number of checked bags ($25/bag)   
+        p
+          input#bags(type='number', name='baggage')
+        p
+          label(for='class') Class   
+        p
+          select#class(name='class')
+            option(value='0', selected='') Coach
+            option(value='200') Business (+ $200)
+            option(value='500') First (+ $500)
+        p
+          input#wifi(type='checkbox', name='wifi', value='yes')
+          label(for='wifi') Wifi ($12)
+        p
+          label(for='discount') Discount code     
+        input#discount(type='text', name='discount', value='')     
+        p.discount-active-read
+          button#click(type='submit', name='calculate') Calculate Price
+        p.info #{total}
+          

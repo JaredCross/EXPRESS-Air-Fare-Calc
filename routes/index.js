@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var calculate = require('../public/javascripts/function.js');
+var calculate = require('../src/function.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
